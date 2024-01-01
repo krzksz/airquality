@@ -2,8 +2,8 @@ name: Update Air Quality Data
 run-name: Updating the air quality data 🚀
 on:
   workflow_dispatch:
-  # schedule:
-  #   - cron: "10 * * * *"
+  schedule:
+    - cron: "10 * * * *"
 permissions:
   contents: write
 jobs:
