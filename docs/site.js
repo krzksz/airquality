@@ -1,5 +1,5 @@
 const rawData = await fetch("./data.csv").then((response) => response.text());
-const lines = rawData.trim().split("\r\n");
+const lines = rawData.trim().split(/[\r\n]+/);
 const parsedLines = lines.map((line) => {
   const dateTime = new Intl.DateTimeFormat("pl-PL", {
     dateStyle: "short",
