@@ -35,6 +35,6 @@ if (!airQuality) {
 }
 
 appendFileSync(
-  "./site/data.csv",
+  "./docs/data.csv",
   `${airQuality.timestamp};${airQuality.pm25};${airQuality.pm100}\r\n`
 );
